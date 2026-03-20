@@ -12,11 +12,11 @@ module "vpc" {
 }
 
 # Call EC2 Module
-#module "ec2" {
- # source = "./modules/ec2"
+module "ec2" {
+  source = "./ec2-module"
 
-  #ami           = "ami-0c55b159cbfafe1f0"  # Amazon Linux (update if needed)
-  #instance_type = "t2.micro"
+  ami_id           = "ami-02dfbd4ff395f2a1b"  # Amazon Linux (update if needed)
+  instance_type = "t3.micro"
 
-  #subnet_id = module.vpc.public_subnet_ids[0]
-#}
+  subnet_id = module.vpc.public_subnet_ids[0]
+}
