@@ -1,0 +1,10 @@
+vpc_cidr = "10.0.0.0/16"
+public_subnet_cidrs = ["10.0.1.0/24", "10.0.2.0/24"]
+private_subnet_cidrs = ["10.0.3.0/24", "10.0.4.0/24"]
+public_az = [ "us-east-1a", "us-east-1b" ]
+private_az = [ "us-east-1a", "us-east-1b" ]
+igw_route_destination = "0.0.0.0/0"
+nat_availability_mode = "regional"
+nat_route_destination = "0.0.0.0/0"
+instance_type = "t2.micro"
+ami = "ami-02dfbd4ff395f2a1b"
